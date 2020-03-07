@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+	<StartWorkingDirectory>$(MSbuildProjectDirectory)</StartWorkingDirectory>
+	
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UI\Registros\icons8-agregar-propiedad-30.png" />
+    <None Remove="UI\Registros\icons8-borrar-30.png" />
+    <None Remove="UI\Registros\icons8-eliminar-24%281%29.png" />
+    <None Remove="UI\Registros\icons8-encuentra-hombre-usuario-24.png" />
+    <None Remove="UI\Registros\icons8-guardar-30%281%29.png" />
+    <None Remove="UI\Registros\icons8-nuevo-30.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\Registros\icons8-agregar-propiedad-30.png" />
+    <Resource Include="UI\Registros\icons8-borrar-30.png" />
+    <Resource Include="UI\Registros\icons8-eliminar-24(1).png" />
+    <Resource Include="UI\Registros\icons8-encuentra-hombre-usuario-24.png" />
+    <Resource Include="UI\Registros\icons8-guardar-30(1).png" />
+    <Resource Include="UI\Registros\icons8-nuevo-30.png" />
+  </ItemGroup>
+
+</Project>
